@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
+
+:root {
+  --primary-color: rgb(17, 86, 102);
+  --primary-color-darker: rgb(9, 48, 56);
+  font-size: 16px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: "Open sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-size: 1rem;
+}
+
+.container {
+  max-width: 40rem;
+  margin: 3.125rem auto;
+  background: #fff;
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+}
+
+form input,
+form label,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.625rem;
+}
+
+form input {
+  font-size: 1.25rem;
+  height: 2rem;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid black;
+}
+
+form input:focus {
+  outline: 1px solid var(--primary-color);
+}
+
+form button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  height: 3.125rem;
+  cursor: pointer;
+  margin-top: 1.875rem;
+}
+
+form button:hover {
+  background: var(--primary-color-darker);
+}
+
+/* Exercise Styles */
+table {
+  width: 100%;
+  margin: 1.5rem auto;
+}
+
+table thead {
+  font-weight: bold;
+}
+
+form#imc-form h2 {
+  margin-bottom: 1rem;
+}
+
+div#resultados {
+  background: #01fec2;
+  padding: 0 0.25rem;
+}
+
+div#resultados.error {
+  background: tomato;
+}
+
+div#resultados p {
+  width: max-content;
+  margin: 0 auto;
+}
